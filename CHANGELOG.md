@@ -1,6 +1,173 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 10.4.21
+* Fixed old `-moz-` prefix for `:placeholder-shown` (by @Marukome0743).
+
+## 10.4.20
+* Fixed `fit-content` prefix for Firefox.
+
+## 10.4.19
+* Removed `end value has mixed support, consider using flex-end` warning
+  since `end`/`start` now have good support.
+
+## 10.4.18
+* Fixed removing `-webkit-box-orient` on `-webkit-line-clamp` (@Goodwine).
+
+## 10.4.17
+* Fixed `user-select: contain` prefixes.
+
+## 10.4.16
+* Improved performance (by Romain Menke).
+* Fixed docs (by Christian Oliff).
+
+## 10.4.15
+* Fixed `::backdrop` prefixes (by 一丝).
+* Fixed docs (by Christian Oliff).
+
+## 10.4.14
+* Improved startup time and reduced JS bundle size (by Kārlis Gaņģis).
+
+## 10.4.13
+* Fixed missed prefixes on vendor prefixes in name of CSS Custom Property.
+
+## 10.4.12
+* Fixed support of unit-less zero angle in backgrounds (by 一丝).
+
+## 10.4.11
+* Fixed `text-decoration` prefixes by moving to MDN data (by Romain Menke).
+
+## 10.4.10
+* Fixed `unicode-bidi` prefixes by moving to MDN data.
+
+## 10.4.9
+* Fixed `css-unicode-bidi` issue from latest Can I Use.
+
+## 10.4.8
+* Do not print `color-adjust` warning if `print-color-adjust` also is in rule.
+
+## 10.4.7
+* Fixed `print-color-adjust` support in Firefox.
+
+## 10.4.6
+* Fixed `print-color-adjust` support.
+
+## 10.4.5
+* Fixed `NaN` in grid (by @SukkaW).
+
+## 10.4.4
+* Fixed `package.funding` to have same value between all PostCSS packages.
+
+## 10.4.3
+* Fixed `package.funding` (by Álvaro Mondéjar).
+
+## 10.4.2
+* Fixed missed `-webkit-` prefix for `width: stretch`.
+
+## 10.4.1
+* Fixed `::file-selector-button` data (by Luke Warlow).
+
+## 10.4 “ǃke e꞉ ǀxarra ǁke”
+* Added `:autofill` support (by Luke Warlow).
+
+## 10.3.7
+* Replaced `nanocolors` to `picocolors`.
+
+## 10.3.6
+* Updated `nanocolors`.
+* Reduced package size.
+
+## 10.3.5
+* Replaced `colorette` to `nanocolors`.
+
+## 10.3.4
+* Fixed `stretch` value in latest Firefox.
+
+## 10.3.3
+* Fixed wrong `-moz-` prefix from  `::file-selector-button` (by Usman Yunusov).
+
+## 10.3.2
+* Fixed `::file-selector-button` support (by Usman Yunusov).
+
+## 10.3.1
+* Fixed adding wrong prefixes to `content` (by Luke Warlow).
+
+## 10.3 “Чести своей не отдам никому”
+* Added `::file-selector-button` support (by Luke Warlow).
+
+## 10.2.6
+* Fixed “no prefixes needed” warning (by @Pwntheon).
+
+## 10.2.5
+* Fixed `:` support in `@supports` (by Dmitry Semigradsky).
+* Fixed docs (by Christian Oliff).
+
+## 10.2.4
+* Fixed browser names in `npx autoprefixer --info`.
+
+## 10.2.3
+* Fixed PostCSS 8 support.
+
+## 10.2.2
+* Fixed PostCSS 8 plugins compatibility.
+
+## 10.2.1
+* Fixed `transition-property` warnings (by @Sheraff).
+
+## 10.2 “Sub rosa”
+* Added TypeScript definitions (by Dmitry Semigradsky).
+* Fixed docs (by Florian Pellet).
+
+## 10.1 “Pula”
+* Added `dpcm` unit support to `min-resolution: 2dppx` (by Robert Eisele).
+* Fixed rational approximation in `min-resolution` (by Robert Eisele).
+
+## 10.0.4
+* Fixed `Cannot read property 'proxyOf' of undefined` error (by Igor Kamyshev).
+
+## 10.0.3
+* Fixed `substract` to `subtract` value for `mask-composite` (by Michelle Enos).
+
+## 10.0.2
+* Removed `-ms-user-select: all` because IE and old Edge don’t support it.
+* Fixed Grid Layout warning.
+
+## 10.0.1
+* Fix PostCSS 8.1 compatability.
+* Add our OpenCollective to `package.json`.
+* Clean up code (by Sukka).
+
+## 10.0 “Alis volat propriis”
+* Removed support for Node.js 6.x, 8.x, 11.x.
+* Moved `postcss` to `peerDependencies`.
+* Moved to PostCSS 8.
+
+## 9.8.6
+* Fixed `env` option.
+
+## 9.8.5
+* Improved Grid Layout warnings (by Daniel Tonon).
+* Fixed `align-self` and `justify-self` with `display: flex` (by Daniel Tonon).
+
+## 9.8.4
+* Replace color output library.
+
+## 9.8.3
+* Return old non-LTS Node.js versions to avoid breaking changes.
+
+## 9.8.2
+* Remove Node.js 13.0-13.7 from supported engines, because of buggy ESM support.
+
+## 9.8.1
+* Replace `chalk` to `kleur` (by Luke Edwards).
+* Update docs (by @mbomb007).
+
+## 9.8 “Vigilo Confido”
+* Add `:placeholder-shown` support (by Tanguy Krotoff).
+
+## 9.7.6
+* Revert `-webkit-stretch` fix.
+
 ## 9.7.5
 * Fix `-webkit-stretch` support.
 

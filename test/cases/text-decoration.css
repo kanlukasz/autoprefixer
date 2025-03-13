@@ -2,7 +2,13 @@
   text-decoration: overline double red;
 }
 
+.shorthand-single-value {
+  text-decoration: underline;
+}
+
 .full {
+  text-decoration-color: green;
+  text-decoration-line: line-through;
   text-decoration-style: double;
 }
 

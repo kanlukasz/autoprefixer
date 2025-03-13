@@ -64,6 +64,16 @@
                        "foot ....";
 }
 
+.no-warn {
+  /* autoprefixer grid: off */
+  grid-column-end: 3;
+  grid: subgrid;
+  grid-gap: 1rem;
+  grid-template-areas: "head head"
+                       "nav  main"
+                       "foot ....";
+}
+
 .warn-gap-rows {
   grid-gap: 1rem;
   -ms-grid-rows: 1fr 1rem 1fr;
@@ -116,6 +126,19 @@
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+/* should add grid prefixes because a flex container can be a grid item */
+.align-justify-grid-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 @supports ((display: -ms-grid) or (display: grid)) {
@@ -259,4 +282,10 @@
 .named > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+}
+
+/** https://github.com/postcss/autoprefixer/issues/1446 */
+.issue-1446 {
+  grid-row-start: span 3;
+  grid-row-end: 5;
 }
